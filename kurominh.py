@@ -6,7 +6,6 @@ from ec2_metadata import ec2_metadata
 from dotenv import load_dotenv
 load_dotenv() 
 intents = discord.Intents.default()
-intents.message_content = True 
 intents.messages = True 
 
 ip_address = ec2_metadata.public_ipv4 or ec2_metadata.private_ipv4
